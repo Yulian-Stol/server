@@ -34,6 +34,7 @@
 	font-size: 16px
 	color: $text
 	font-weight: 600
+	font-size: 20px
 
 	&:hover
 		border: 2px solid $text
@@ -108,22 +109,24 @@
 
 		+r(992)
 			top: -46px
-			left: 83%
+			left: 80%
 
 		+r(767)
-			left: 76%
+			left: 72%
 
 		+r(576)
 			height: 25px
-			left: 65%
+			left: 73%
 			top: -29px
 			border-radius: 5px
+			padding: 0px 10px
+			font-size: 15px
 
 		+r(390)
-			left: 60%
+			left: 65%
 
 		+r(350)
-			left: 56%
+			left: 65%
 
 	&--orderServ
 		position: relative
@@ -132,22 +135,24 @@
 
 		+r(992)
 			top: -46px
-			left: 83%
+			left: 80%
 
 		+r(767)
-			left: 76%
+			left: 72%
 
 		+r(576)
 			height: 25px
-			left: 65%
+			left: 73%
 			top: -29px
 			border-radius: 5px
+			padding: 0px 10px
+			font-size: 15px
 
 		+r(390)
-			left: 60%
+			left: 65%
 
 		+r(350)
-			left: 60%
+			left: 65%
 			width: 100px
 
 	&--form
@@ -201,6 +206,7 @@
 			background: $accent
 			color: $text
 			transform: none
+
 
 //-------TITLE------
 .h1
@@ -483,6 +489,7 @@
 			+r(767)
 				flex-direction: column
 				align-items: center
+				text-align: center
 				gap: 30px
 
 			a
@@ -798,6 +805,7 @@
 
 	&__title
 		margin-bottom: 15px
+		font-size: 65px
 
 	&__container
 		p
@@ -971,7 +979,7 @@
 	&__container
 
 		h1
-			font-size: 74px
+			font-size: 65px
 			margin-bottom: 15px
 
 			+r(992)
@@ -1036,11 +1044,14 @@
 			+r(576)
 				padding: 16px 16px 0px 16px
 
+
+
 			p
 				&:nth-child(1)
 					img
 						margin: auto
 						margin-left: 5px
+						margin-bottom: 5px
 						width: 28px
 						height: 20px
 
@@ -1051,8 +1062,14 @@
 				&:nth-child(7)
 					+r(992)
 						display: none
-			
+
 			a
+				&:nth-child(3)
+					display: none
+
+					+r(992)
+						display: block
+
 				display: block
 				width: 36px
 				height: 30px
